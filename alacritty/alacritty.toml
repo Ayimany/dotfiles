@@ -1,0 +1,4 @@
+import = [
+    "~/.config/alacritty/catppuccin_mocha.toml"
+]
+
