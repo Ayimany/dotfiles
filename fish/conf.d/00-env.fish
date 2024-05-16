@@ -34,7 +34,7 @@ mkdir -p 			\
 
 # XDGEXT
 set -gx XDG_EXT_PROJECTS_HOME 	"$HOME/projects"
-set -gx XDG_EXT_TRASH_HOME	"$XDG_PICTURES_DIR/trash"
+set -gx XDG_EXT_TRASH_HOME	"$HOME/trash"
 set -gx XDG_EXT_SCREENSHOTS_DIR	"$XDG_PICTURES_DIR/screenshots"
 
 mkdir -p 				\

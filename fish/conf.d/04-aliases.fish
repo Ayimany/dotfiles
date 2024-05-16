@@ -3,7 +3,7 @@ if ! status --is-interactive
 end
 
 alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
-aliaz rm="trash"
+alias rm="trash --trash-dir $XDG_EXT_TRASH_HOME"
 alias cd="z"
 alias cdi="zi"
 
