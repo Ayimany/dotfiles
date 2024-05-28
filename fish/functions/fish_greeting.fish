@@ -1,5 +1,5 @@
 function fish_greeting
-    echo -e "\nDrink water. Tell bae you love her.\n"
+    echo -e "Drink water. Be yourself. Love exists.\n"
 
     if test -n "$fish_private_mode"
         set_color red

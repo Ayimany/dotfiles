@@ -5,8 +5,8 @@
     defaultBranch = main
 
 [user]
-    name = AyimanyMooncat
-    email = ayimanymooncat@proton.me
+    name  = AyimanyMooncat
+    email = null@null.com
 
 [core]
     pager = delta

@@ -70,6 +70,7 @@ yay --noconfirm --needed -S	\
     await 			\
     doggo-bin			\
     nnn-nerd			\
+    keyd			\
     clipboard-bin		\
     moar
 
@@ -77,16 +78,19 @@ yay --noconfirm --needed -S	\
 sudo pacman --noconfirm --needed -S fish
 
 # Wayland shit
-sudo pacman --noconfirm -S hyprland
+sudo pacman --noconfirm -S	\
+    hyprland			\
+    xdg-desktop-portal-hyprland	\
+    qt5-wayland			\
+    qt6-wayland			\
+    hypridle			\
+    hyprland			\
+    hyprlock 			\
+
 yay --noconfirm -S 	\
-    hyprshade-git	\
-    hyprsome-git 	\
-    hyprpicker-git	\
-    hyprpaper-git	\
-    hypridle-git 	\
-    hypridle-git 	\
-    hyprlock-git 	\
-    hyprshot-git
+    hyprshade		\
+    hyprpicker		\
+    hyprshot
 
 # Needs graphical
 sudo pacman --noconfirm --needed -S 	\
@@ -107,10 +111,26 @@ sudo pacman --noconfirm --needed -S 	\
 
 yay --noconfirm --needed -S	\
     localsend-bin		\
-    tofi
+    wofi
 
 sudo chsh ayimany -s /usr/bin/fish
 bat cache --build
+
+which keyd
+LAST_STATUS="$?"
+
+if [[ ! "$LAST_STATUS" -eq 0 ]]; then
+echo \
+"[ids]
+*
+
+[main]
+capslock = esc
+esc = capslock
+" | sudo tee /etc/keyd/main.conf
+sudo systemctl enable keyd
+sudo systemctl start keyd
+fi
 
 echo "Remember to: "
 echo "- Generate an SSH key"

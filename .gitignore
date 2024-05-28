@@ -1,2 +1,10 @@
-systemd/
-yay/
+# Config is selective of what to add to avoid issues
+*
+**/*
+**/**/*
+
+.*
+.**/*
+
+!.gitignore
+
