@@ -1,11 +1,4 @@
 # dotfiles
 Arch dotfiles &amp; scripts
 
-## Contents
-
-### Fish
-Config for the fish shell
-- Custom Prompt
-- Environment Variables
-- Command Overrides
-- Command Abbrs
+I hope I don't have to do this again. ever.
