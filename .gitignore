@@ -1,10 +1,32 @@
 # Config is selective of what to add to avoid issues
 *
-**/*
-**/**/*
 
-.*
-.**/*
+!bat
+!beautifuldiscord
+!btop
+!copyq/themes
+!delta
+!dust
+!fish
+!fzf
+!git
+!glow
+!gtk-2.0
+!gtk-3.0
+!hypr
+!kitty
+!mako
+!mpv
+!obs-studio/themes
+!python
+!qalculate/qalc.cfg
+!qt5ct
+!qt6ct
+!thefuck
+!waybar
+!wofi
 
 !.gitignore
+!mimeapps.list
+!QtProject.conf
 

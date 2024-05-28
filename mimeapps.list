@@ -1,0 +1,8 @@
+
+[Default Applications]
+text/html=firefoxdeveloperedition.desktop
+x-scheme-handler/http=firefoxdeveloperedition.desktop
+x-scheme-handler/https=firefoxdeveloperedition.desktop
+x-scheme-handler/about=firefoxdeveloperedition.desktop
+x-scheme-handler/unknown=firefoxdeveloperedition.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
