@@ -1,12 +1,9 @@
 [include]
     path = /home/ayimany/.config/delta/themes/catppuccin.gitconfig
+    path = /home/ayimany/.config/git/user
 
 [init]
     defaultBranch = main
-
-[user]
-    name  = AyimanyMooncat
-    email = mooncatayimany@proton.me
 
 [core]
     pager = delta
