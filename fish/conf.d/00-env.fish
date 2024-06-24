@@ -69,7 +69,7 @@ set -gx XCURSOR_PATH    "/usr/share/icons:$XDG_DATA_HOME/icons"
 # OTHER TOOLS
 set -gx GRIM_DEFAULT_DIR "$XDG_EXT_SCREENSHOTS_DIR"
 set -gx MOAR "-quit-if-one-screen"
-set -gx BAT_THEME "catppuccin_mocha"
+set -gx BAT_THEME "Catppuccin Mocha"
 set -gx BAT_PAGER "$PAGER"
 
 set -gx FZF_DEFAULT_OPTS "\
