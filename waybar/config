@@ -1,0 +1,206 @@
+
+// oooooo   oooooo     oooo .o.   oooooo   oooo oooooooooo.       .o.       ooooooooo.   
+//  `888.    `888.     .8' .888.   `888.   .8'  `888'   `Y8b     .888.      `888   `Y88. 
+//   `888.   .8888.   .8' .8"888.   `888. .8'    888     888    .8"888.      888   .d88' 
+//    `888  .8'`888. .8' .8' `888.   `888.8'     888oooo888'   .8' `888.     888ooo88P'  
+//     `888.8'  `888.8' .88ooo8888.   `888'      888    `88b  .88ooo8888.    888`88b.    
+//      `888'    `888' .8'     `888.   888       888    .88P .8'     `888.   888  `88b.  
+//       `8'      `8' o88o     o8888o o888o     o888bood8P' o88o     o8888o o888o  o888o 
+
+//  __               
+// /__ _ ._  _ .__.| 
+// \_|(/_| |(/_|(_|| 
+// Quick Search: General
+
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 32,
+
+    "margin-left": 32,
+    "margin-right": 32,
+    "margin-top": 16,
+    "margin-bottom": -16,
+
+    "modules-left": [
+	"clock",
+	"custom/separator",
+	"hyprland/workspaces",
+	"tray"
+    ],
+
+    "modules-right": [
+	"memory",
+	"cpu",
+	"custom/separator",
+	"pulseaudio#source",
+	"pulseaudio#sink",
+	"custom/separator",
+	"network",
+	"custom/separator",
+	"battery"
+    ],
+
+    "modules-center": [ ],
+
+    "fixed-center": true,
+    "reload_style_on_change": true,
+
+
+    //  _                 
+    // |_) _._|__|_ _ ._  
+    // |_)(_| |_ |_(/_|\/ 
+    //                 /  
+
+    "battery": {
+	"tooltip"  : false,
+	"interval" : 60,
+
+	"states": {
+	    "full" : 90,
+	    "mid"  : 50,
+	    "low"  : 30,
+	    "crit" : 15
+	},
+
+	"format"          : "{icon}   {capacity}%",
+	"format-charging" : "󰂄   {capacity}%     󰔚   {time}",
+
+	"format-icons": [
+	    "󰂎",
+	    "󰁺",
+	    "󰁻",
+	    "󰁼",
+	    "󰁽",
+	    "󰁾",
+	    "󰂀",
+	    "󰂁",
+	    "󰂂",
+	    "󰁹"
+	]
+    },
+
+
+    //  _         
+    // / | _  _|  
+    // \_|(_)(_|< 
+
+    "clock": {
+	"tooltip": false,
+        "interval": 60,
+        "format": "󰥔   {:%H:%M     󰃭   %b, %a %d}",
+        "max-length": 25
+    },
+
+    //  _       
+    // / ._     
+    // \_|_)|_| 
+    //   |      
+
+    "cpu": {
+	"tooltip" : false,
+	"format"  : "󰚗   {usage}"
+    },
+
+
+    // \    /_ ._|  _._  _. _ _  _ 
+    //  \/\/(_)| |<_>|_)(_|(_(/__> 
+    //               |             
+
+    "hyprland/workspaces": {
+	"active-only"  : false,
+	"show-special" : true,
+	"format"       : "{icon}  ",
+
+	"format-icons": {
+	    "active"     : "󰽢",
+	    "default"    : "󰐾",
+	    "empty"      : "󰽤",
+	    "persistent" : "󰐾",
+	    "special"    : "󰓎",
+	    "urgent"     : "󰋼"
+	},
+
+        "persistent-workspaces": {
+             "*": 10
+        }
+
+    },
+
+    // |\/| _ ._ _  _ ._  
+    // |  |(/_| | |(_)|\/ 
+    //                 /  
+
+    "memory": {
+	"tooltip" : false,
+	"format"  : "   {percentage}"
+    },
+
+    // |\ | __|_     _ ._|  
+    // | \|(/_|_\/\/(_)| |< 
+
+    "network": {
+	"tooltip" : false,
+
+	"format"              : "󰤫",
+	"format-ethernet"     : "󰁝   {bandwidthUpBytes}     󰁅   {bandwidthDownBytes}     󰈀",
+	"format-wifi"         : "󰁝   {bandwidthUpBytes}     󰁅   {bandwidthDownBytes}     {icon}     {signalStrength}",
+	"format-linked"       : "󰁝   {bandwidthUpBytes}     󰁅   {bandwidthDownBytes}     󰌷     {signalStrength}",
+	"format-disconnected" : "󰤮",
+
+	"format-icons": [
+	    "󰤯",
+	    "󰤟",
+	    "󰤢",
+	    "󰤥",
+	    "󰤨"
+	]
+    },
+
+    //  __       
+    // (_ o._ |  
+    // __)|| ||< 
+
+    "pulseaudio#sink": {
+	"tooltip" : false,
+
+	"format"       : "{icon}   {volume}",
+	"format-muted" : "󰝟   {volume}",
+
+	"format-icons" : [
+	    "󰕿", "󰖀", "󰕾"
+	]
+    },
+
+
+    //  __             
+    // (_  _    .__ _  
+    // __)(_)|_||(_(/_ 
+
+    "pulseaudio#source": {
+	"tooltip" : false,
+
+	"format"       : "{format_source}",
+	"format-muted" : "{format_source_muted}",
+
+	"format-source"       : "󰍬   {source_volume}",
+	"format-source-muted" : "󰍭   {source_volume}"
+    },
+
+    // ___      
+    //  |.__.   
+    //  ||(_|\/ 
+    //       /  
+
+    "tray": {
+	"show-passive-items": true,
+
+        "icon-size" : 18,
+        "spacing"   : 12
+    },
+
+    "custom/separator": {
+	"format" : "|"
+    }
+
+}

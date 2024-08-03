@@ -1,0 +1,74 @@
+* {
+    background-color: #00000000;
+}
+
+window {
+    height           : calc(100% - 64px);
+    width            : calc(100% - 64px);
+    font             : "Roboto Slab 12";
+    background-color : #11111b;
+    border-radius    : 8px;
+}
+
+mainbox {
+    spacing: 0px;
+}
+
+prompt {
+    enabled: false;
+}
+
+case-indicator {
+    enabled: false;
+}
+
+entry {
+    border-radius    : 128px;
+    padding          : 16px 16px 16px 32px;
+    margin           : 32px 64px 16px 64px;
+
+    horizontal-align : 0.5;
+    vertical-align   : 0.5;
+
+    text-color       : #b4befe;
+    text-transform   : bold;
+    background-color : #181825;
+
+    placeholder      : "Search...";
+}
+
+listview {
+    spacing       : 32px;
+    margin        : 0px 0px 64px 0px;
+    padding       : 16px 16px 16px 32px;
+
+    flow          : vertical;
+
+    columns       : 5;
+    fixed-columns : true;
+}
+
+element {
+    orientation : vertical;
+}
+
+element-icon {
+    size    : 64px;
+    padding :  16px;
+}
+
+element-icon.selected {
+}
+
+element-text {
+    horizontal-align : 0.5;
+
+    text-color       : #cdd6f4;
+    highlight        : none;
+}
+
+element-text.selected {
+    text-color     : #b4befe;
+    text-transform : bold;
+}
+
